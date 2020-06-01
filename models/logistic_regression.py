@@ -11,7 +11,7 @@ def run_code():
 
 	x = train_data.drop('label', axis=1)
 	y = train_data['label']
-	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.53)
+	x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20)
 
 	linear = LogisticRegression(
 		C=20, solver='lbfgs', multi_class='multinomial'
